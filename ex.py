@@ -12,7 +12,6 @@ def buscar_piada(categoria="Any"):
             print("Ocorreu um erro ao buscar a piada.")
             return
 
-        # Piadas podem ser de dois tipos: single (uma frase) ou twopart (pergunta e resposta)
         if dados["type"] == "single":
             print(f"\n😂 Piada: {dados['joke']}")
         elif dados["type"] == "twopart":
